@@ -139,17 +139,6 @@ def GreysAnatomy(incoming_msg):
 
     return SearchGif(incoming_msg, search_term)
 
-def Farts(incoming_msg):
-    """
-    Function to retrieve a meme of farts.
-    :param incoming_msg: The incoming message object from Teams
-    :return: A text or markdown based reply
-    """
-    # our test search
-    search_term = "farts"
-
-    return SearchGif(incoming_msg, search_term)
-
 def Coding(incoming_msg):
     """
     Function to retrieve a meme on brooklyn99.
@@ -195,7 +184,6 @@ bot.add_command("/ParksAndRecreation", "Post a meme from Parks, and Recreation."
 bot.add_command("/MrRobot", "Post a meme from Mr.Robot.", MrRobot)
 bot.add_command("/SchittsCreek", "Post a meme from Schittscreek.", SchittsCreek)
 bot.add_command("/Brawlstars", "Post a meme from brawlstars.", Brawlstars)
-bot.add_command("/Farts", "Post a meme of farts.", Farts)
 bot.add_command("/Coding", "Post memes about coding.", Coding)
 bot.add_command("/Magic8Ball", "Post a random Magic 8 Ball response.", Magic8Ball)
 bot.add_command("/Harden", "Post a meme of James Harden", Harden)
