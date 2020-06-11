@@ -1,1 +1,1 @@
-web gunicorn manage:MrRobot
+web gunicorn app:MrRobot
