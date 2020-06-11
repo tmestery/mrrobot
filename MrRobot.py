@@ -25,6 +25,9 @@ key = 'TENORAPIKEY'
 apikey = os.getenv(key) 
 lmt = 1
 
+portkey = 'PORT'
+port = os.getenv(key)
+lmt = 1
 
 # A simple command that returns a basic string that will be sent as a reply
 def do_something(incoming_msg):
@@ -191,4 +194,4 @@ bot.add_command("/GreysAnatomy", "Post a meme of Greys Anatomy.", GreysAnatomy)
 
 if __name__ == "__main__":
     # Run Bot
-    bot.run(host="0.0.0.0", port=5000)
+    bot.run(host="0.0.0.0", port=port)

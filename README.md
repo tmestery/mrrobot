@@ -10,6 +10,7 @@ This project uses [webexteamsbot](https://github.com/hpreston/webexteamsbot) as 
 
 The following environment variables need to be set to use this:
 
+* `PORT`
 * `TEAMS_BOT_TOKEN`
 * `TEAMS_BOT_EMAIL`
 * `TEAMS_BOT_APP_NAME`
