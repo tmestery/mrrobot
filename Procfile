@@ -1,1 +1,1 @@
-web gunicorn app:MrRobot
+web gunicorn MrRobot:app
