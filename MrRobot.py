@@ -122,7 +122,7 @@ def SchittsCreek(incoming_msg):
 
 def Brawlstars(incoming_msg):
     """
-    Function to retrieve a meme on brooklyn99.
+    Function to retrieve a meme on Brawlstars.
     :param incoming_msg: The incoming message object from Teams
     :return: A text or markdown based reply
     """
@@ -164,6 +164,17 @@ def Harden(incoming_msg):
 
     return SearchGif(incoming_msg, search_term)
 
+def Music(incoming_msg):
+    """
+    Function to retrieve a meme on Music.
+    :param incoming_msg: The incoming message object from Teams
+    :return: A text or markdown based reply
+    """
+    # our test search
+    search_term = "Music"
+
+    return SearchGif(incoming_msg, search_term)
+
 def Magic8Ball(incoming_msg):
     """
     Function to shake a magic 8 ball.
@@ -191,6 +202,7 @@ bot.add_command("/Coding", "Post memes about coding.", Coding)
 bot.add_command("/Magic8Ball", "Post a random Magic 8 Ball response.", Magic8Ball)
 bot.add_command("/Harden", "Post a meme of James Harden", Harden)
 bot.add_command("/GreysAnatomy", "Post a meme of Greys Anatomy.", GreysAnatomy)
+bot.add_command("/Music", "Post a meme of music.", Music)
 
 if __name__ == "__main__":
     # Run Bot
