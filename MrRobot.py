@@ -27,7 +27,6 @@ lmt = 1
 
 portkey = 'PORT'
 port = os.getenv(key)
-lmt = 1
 
 # A simple command that returns a basic string that will be sent as a reply
 def do_something(incoming_msg):
@@ -55,7 +54,7 @@ def SearchGif(incoming_msg, search_term):
         print(json.dumps(top_gif, indent=4, sort_keys=True))
         for i in range(len(top_gif['results'])):
             url = top_gif['results'][i]['media'][0]['gif']['url'] 
-            print (url)
+            print ("Found url " % i % url)
     else:
         top_gif = None
 
