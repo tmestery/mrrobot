@@ -54,7 +54,7 @@ def SearchGif(incoming_msg, search_term):
         print(json.dumps(top_gif, indent=4, sort_keys=True))
         for i in range(len(top_gif['results'])):
             url = top_gif['results'][i]['media'][0]['gif']['url'] 
-            print ("Found url " % i % url)
+            print ("Found url ", i, ": ", url)
     else:
         top_gif = None
 
