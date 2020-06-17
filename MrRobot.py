@@ -18,7 +18,6 @@ bot = TeamsBot(
     teams_bot_token=teams_token,
     teams_bot_url=bot_url,
     teams_bot_email=bot_email,
-    debug=True,
 )
 
 # set the apikey and limit
